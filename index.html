@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
   
   <div class="header">
     <div class="container">
+      <div class="menu-bar">
+        <i class="fas fa-bars"></i>
+      </div>
+      
       <div class="header__logo">
         <!-- <img src="img/img12.jpg" alt="" class="img"> -->
         <p class="header__p">Johnson Co</p>
@@ -25,6 +30,14 @@
       </div>
       <div class="header__cart">
         <img src="./img/shopping-cart.svg" alt="" class="header__img">
+      </div>
+      <div class="menu-list">
+          <ul>
+            <li class="menu-item">Men's Fashion</li>
+            <li class="menu-item">Women's Fashion</li>
+            <li class="menu-item">Beauty</li>
+            <li class="menu-item">Essentails</li>
+          </ul>
       </div>
     </div>
   </div>
@@ -392,6 +405,17 @@
     </div>
   </div>
 
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".menu-bar").on("click", function(){
+        $(".menu-list ul").toggleClass("show");
+      })
+    })
+  </script>
 
 
 </body>
