@@ -1,0 +1,26 @@
+.outerimgmasterdiv{
+  width: 20%;
+}
+
+.mainimgdiv{
+  overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.secondndimgdiv{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.secondndimg{
+
+}

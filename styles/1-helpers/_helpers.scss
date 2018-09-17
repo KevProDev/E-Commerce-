@@ -1,0 +1,41 @@
+/* Utility Classes */
+
+/* Make element full width */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+/* Make sure elements don't run outside containers (great for images in columns) */
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+/* Float either direction */
+.u-pull-right {
+  float: right; }
+.u-pull-left {
+  float: left; }
+
+/* Clear a float */
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+// .container{
+//   width: 80%;
+//   margin-left: auto;
+//   margin-right: auto;
+//   overflow: hidden;
+// }
+
+.container{
+  // margin: 0 230px;
+  padding: 0 60px;
+  overflow: hidden;
+}
+
+
+.move-over {
+  margin-left: 120px;
+}

@@ -1,0 +1,184 @@
+html{
+
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  // color: var(--light);
+}
+body{
+  // font-family: 'Roboto 500';
+  // background: #ccc;
+  // margin: 30px 50px;
+  line-height: 1;
+  font-family: 'Raleway';
+
+}
+
+
+h1{
+  font-size: 8.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+h2{
+  font-size: 6.7rem;
+}
+h3{
+  font-size: 5.0rem;
+}
+h4{
+  font-size: 3.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h5{
+  font-size: 2.8rem;
+}
+h6{
+  font-size: 2.1rem;
+}
+p{
+  font-size: 1.6rem;
+  // padding: 1.6rem 0;
+}
+h1,h2,h3,h4,h5,h6{
+
+}
+a{
+  text-decoration: none;
+
+}
+a:link, a:visited{
+  // font-size: 0.7rem;
+  // color: black;
+  text-decoration: none;
+}
+a:hover, a:active{
+  // font-size: 0.7rem;
+  // color: black;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.btn {
+  background: #B98F33;
+  display: inline-block;
+  color: #fff;
+  padding: 1.0rem 1.3rem;
+  font-size: 1.8rem;
+  border: 0px;
+  border: 1px solid var(--light);
+  border-radius: 5%;
+  box-shadow: var(--shadow);
+  margin-top: 0rem;
+}
+.btn:hover, .btn-aref:hover{
+  background: #ad854b;
+  color: var(--light);
+  border: none;
+  box-shadow: none;
+
+}
+
+.btn-aref {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--light);
+  font-size: 1.19rem;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  background: rgb(213, 164, 91);
+
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.t-left {text-align: left}
+
+.t-right {text-align: right}
+
+.t-center {text-align: center}
+
+.no-margin {margin: 0}
+
+
+
+// .wrapper{
+//   display: grid;
+//   grid-gap: 20px;
+// }
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+// @media (max-width: $breakpoint-desktop){
+//   .g-container{
+//     width: 80%;
+//
+//   }
+//   .image-content{
+//     max-width: 100%;
+//     height: auto;
+//     display: block;
+//   }
+//
+// }
+// @media (max-width: $breakpoint-laptop){
+//   .g-container{
+//     width: 100%;
+//     background: orange;
+//   }
+//
+// }
+// @media (max-width: $breakpoint-tablet){
+//   .g-container{
+//     width: 100%;
+//     background: blue;
+//   }
+// }
+// @media (max-width: $breakpoint-mobile){
+//   .g-container{
+//     width: 100%;
+//     background: red;
+//   }
+//
+// }
