@@ -2,7 +2,7 @@
 
 Theme Name: Artist Page
 Author: Kevo Web Solution 2018
-Version: 1.0 
+Version: 2.0 
 
 */
 :root {
@@ -365,12 +365,12 @@ img {
     width: 100%;
     text-align: center; }
     .slider__text .slider__title {
-      font-size: 2.7rem;
+      font-size: 4.0rem;
       line-height: 4rem;
       width: 70%;
       margin: 0 auto; }
     .slider__text .slider__subtitle {
-      font-size: 1.4rem; }
+      font-size: 1.6rem; }
     .slider__text .btn-link {
       font-size: 1.4rem; }
   .slider__text::after {
@@ -387,15 +387,18 @@ img {
   line-height: 2.2rem; }
 
 .btn-link {
-  font-size: 3.6rem;
-  color: #000;
-  padding: 10px 20px;
-  background-color: #fff;
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 10px 30px;
+  background-color: #000;
   border-radius: 2px;
   margin-top: 2.5rem;
   display: inline-block;
-  color: #000;
-  margin-left: 50px; }
+  margin-left: 50px;
+  transition: .3s; }
+  .btn-link:hover {
+    background: #fff;
+    color: #000; }
 
 .info {
   overflow: hidden;
