@@ -388,17 +388,17 @@ img {
 
 .btn-link {
   font-size: 2.2rem;
-  color: #fff;
+  color: #121212;
   padding: 10px 30px;
-  background-color: #000;
+  background-color: #dde6ef;
   border-radius: 2px;
   margin-top: 2.5rem;
   display: inline-block;
   margin-left: 50px;
   transition: .3s; }
   .btn-link:hover {
-    background: #fff;
-    color: #000; }
+    background-color: #2F2F2F;
+    color: #fff; }
 
 .info {
   overflow: hidden;
@@ -461,6 +461,12 @@ img {
   background: white;
   width: 230px; }
 
+@media (max-width: 550px) {
+  .heading__h3 {
+    font-size: 3.2rem; }
+  .heading__p {
+    top: 105px; } }
+
 .whole {
   display: flex;
   flex-wrap: wrap;
@@ -473,20 +479,33 @@ img {
   clear: both; }
 
 .product-item {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   overflow: hidden; }
+
+@media (max-width: 1078px) {
+  .product-item {
+    width: 70%; } }
 
 .item {
   float: left;
   width: 20%;
   position: relative;
   margin: 25px 0;
-  padding-left: 20px; }
+  padding-left: 10px;
+  cursor: pointer; }
 
 @media (max-width: 1078px) {
   .item {
     width: 33.333%; } }
+
+@media (max-width: 600px) {
+  .item {
+    width: 50%; } }
+
+@media (max-width: 450px) {
+  .item {
+    width: 100%; } }
 
 .item-img {
   position: relative; }
@@ -498,7 +517,7 @@ img {
   padding: 40px 27px;
   width: 100%;
   height: 100%;
-  background-color: rgba(200, 36, 247, 0.7);
+  background-color: transparent;
   text-align: center;
   opacity: 0;
   transition: all .2s ease-in-out; }
@@ -507,14 +526,17 @@ img {
   opacity: 1; }
 
 .item-button-a {
-  color: #c824f7;
-  background-color: #fff;
+  color: #fff;
+  background-color: #2F2F2F;
   border-radius: 4px;
   text-align: center;
   display: inline-block;
-  margin-bottom: 15px;
-  font-size: 1.2rem;
-  padding: 13px 25px; }
+  font-size: 1.5rem;
+  padding: 13px 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
 
 .item-title {
   display: inline-block;
@@ -537,25 +559,25 @@ img {
   color: #838b8f; }
 
 .item-button-a:hover {
-  background-color: #e9e9e9; }
+  background-color: #2F2F2F;
+  color: #fff; }
 
 .view-all-button {
   text-align: center;
   font-size: 26px; }
 
 .view-button {
-  color: #c824f7;
-  background-color: #fff;
+  color: #121212;
+  background-color: #dde6ef;
   border-radius: 4px;
-  border: 1px solid #efbdfd;
   text-align: center;
   display: inline-block;
   margin-bottom: 15px;
   font-size: 1.6rem;
-  padding: 15px 30px; }
+  padding: 15px 60px; }
 
 .view-button:hover {
-  background-color: #c824f7;
+  background-color: #2F2F2F;
   color: #fff; }
 
 .background1 {
@@ -575,14 +597,18 @@ img {
   margin: 25px 0; }
 
 .bg__a {
-  color: #fff;
-  background-color: #c824f7;
+  color: #121212;
+  background-color: #dde6ef;
   border-radius: 4px;
   text-align: center;
   display: inline-block;
   margin-bottom: 15px;
   font-size: 1.6rem;
-  padding: 15px 30px; }
+  padding: 15px 60px; }
+
+.bg__a:hover {
+  background-color: #2F2F2F;
+  color: #fff; }
 
 .background2 {
   display: inline-block;
@@ -599,12 +625,21 @@ img {
 .brand {
   width: 83px;
   float: left;
-  margin: 15px 40px; }
+  margin-left: 70px; }
+
+@media (max-width: 978px) {
+  .background2 {
+    background-position: 0 -135px; }
+  .brand {
+    margin-left: 10px; } }
+
+@media (max-width: 478px) {
+  .brand {
+    display: none; } }
 
 .center {
   overflow: hidden;
-  width: 66%;
-  margin: 0 auto; }
+  display: inline-block; }
 
 .footer {
   background-color: black;
@@ -622,7 +657,6 @@ img {
   padding-bottom: 13px; }
 
 .footer__p {
-  width: 910px;
   margin: 0 auto;
   color: #898989;
   line-height: 2; }
@@ -635,7 +669,7 @@ img {
   width: 250px;
   height: 35px;
   border-radius: 4px;
-  border: 1px solid #c824f7;
+  border: 1px solid #fff;
   color: #c4c4c4;
   font-size: 16px;
   text-align: center;
@@ -646,12 +680,16 @@ img {
 .footer__submit-button {
   display: inline-block;
   padding: 11px 25px;
-  background-color: #c824f7;
-  color: #fff;
+  color: #121212;
+  background-color: #dde6ef;
   border: none;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 600; }
+
+.footer__submit-button:hover {
+  background-color: #2F2F2F;
+  color: #fff; }
 
 .footer-menu {
   padding: 5px 0; }
@@ -669,3 +707,15 @@ img {
   color: #898989;
   margin: 30px 0 0;
   font-size: 15px; }
+
+@media (max-width: 478px) {
+  .foot__h3 {
+    font-size: 3.2rem; }
+  .footer__p {
+    width: 300px;
+    line-height: 1; }
+  .footer-email {
+    width: 180px; }
+  .footer__li {
+    display: block;
+    margin: 6px 15px; } }
