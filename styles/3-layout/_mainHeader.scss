@@ -1,0 +1,174 @@
+.header{
+  display: inline-block;
+  width: 100%;
+  line-height: 50px;
+  position: fixed;
+  z-index: 99;
+  background: white;
+}
+
+.menu-box{
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // max-width: 1400px;
+  // margin: 0px 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.menu-bar{
+  float: left;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-right: 10px;
+  display: none;
+}
+
+.menu-list{
+  display: none;
+}
+
+.header__logo{
+  // float: left;
+  // width: auto;
+  // flex: 1; 
+  // text-align: center;
+
+  padding: 0 30px;
+}
+
+.header__p{
+  font-size: 34px;
+  font-weight: 500;
+  color: #000;
+}
+
+.header__menu{
+  // float: left;
+  // margin-left: 7rem;
+  flex: 3 ;
+}
+.header__cart{
+  // flex: 1;
+  // display: flex;
+  // justify-content: flex-end;
+  // align-items: center;
+
+  padding: 0px 30px;
+} 
+
+
+
+.header__li{
+  display: inline;
+  margin-right: 1.5rem;
+}
+
+.header__a{
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+      
+.header__img{
+  width: 40px;
+}
+
+
+@media (max-width: 1000px) { 
+
+  .show{
+    max-height: 300px;
+  }
+
+  .header{
+    font-size: 22px;
+
+    i{
+      font-size: 30px;
+      padding: 0 30px;
+      vertical-align: middle;
+    }
+
+    p{
+      font-size: 22px;
+    }
+
+
+  }
+
+
+  .container {
+    padding: 0 0px;
+  }
+
+  .header__logo{
+
+    flex: 3 3 80%;
+    text-align: center;
+  }
+
+
+  .menu-bar{
+
+    display: block;
+    // flex: 1 1 10%;
+    // display: flex;
+    // align-items: center;
+    
+  }
+  .header__menu{
+    display: none;
+  }
+
+  .menu-list{
+    display: block;
+    // margin-top: -3px;
+    
+    ul{
+      background: #000;
+      overflow: hidden;
+      color: #fff;
+      text-align: center;
+      transition: .5s;
+      max-height: 0px;
+
+      &.show{
+        max-height: 300px;
+      }
+    }
+  }
+
+  .menu-item{
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .header__mobile_a{
+    color: #fff;
+  }
+
+  .header__cart{
+    // float: none; 
+    // margin-top: 0px;
+    // display: inline-block;
+    // vertical-align: middle;
+    // position: absolute;
+    // right: 30px;
+    // top: 9px;
+    // cursor: pointer;
+    // padding-left: 15px;
+
+    // flex: 1 1 10%;
+  }
+
+  .header__img{
+    width: 35px;
+  }
+
+}
