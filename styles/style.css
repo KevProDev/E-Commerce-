@@ -45,6 +45,13 @@ Version: 2.0
 .off-homepage-space {
   padding-top: 50px; }
 
+.clearfix:after {
+  content: '.';
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -257,16 +264,20 @@ img {
 .footer-copyright__p {
   color: #898989;
   margin: 30px 0 0;
-  font-size: 15px; }
+  font-size: 1.2rem; }
 
 @media (max-width: 478px) {
+  .subscribe-button {
+    margin: 15px 0; }
   .foot__h3 {
     font-size: 3.2rem; }
   .footer__p {
     width: 300px;
-    line-height: 1; }
+    line-height: 1;
+    font-size: 1.2rem; }
   .footer-email {
-    width: 180px; }
+    width: 90%;
+    margin-bottom: 5px; }
   .footer__li {
     display: block;
     margin: 6px 15px; } }
@@ -327,6 +338,69 @@ img {
 .header__img {
   width: 40px; }
 
+.cart-info {
+  position: absolute;
+  background-color: grey;
+  top: 59px;
+  right: 0px;
+  font-size: 1.6rem;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  opacity: 0;
+  background-color: white;
+  border: 1px solid;
+  margin: 10px;
+  width: 350px; }
+
+.show-cart-info {
+  padding: 10px;
+  opacity: 1; }
+
+.cart-info-items-container {
+  max-height: 300px;
+  overflow: scroll; }
+
+.cart-info-items {
+  padding: 5px 0; }
+
+.cart--item-img {
+  float: left;
+  width: 20%; }
+
+.cart--item-title {
+  float: left;
+  width: 60%;
+  padding: 0 10px; }
+
+.cart--item-price {
+  float: left;
+  width: 20%;
+  text-align: right; }
+  .cart--item-price a {
+    color: #000; }
+  .cart--item-price span {
+    padding: 0 5px; }
+
+.check-out-info--total {
+  float: left;
+  width: 50%; }
+
+.check-out-info--price {
+  float: left;
+  width: 50%;
+  text-align: right; }
+
+.check-out {
+  text-align: center; }
+
+.check-out-p {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  line-height: normal; }
+
 @media (max-width: 1000px) {
   .show {
     max-height: 300px; }
@@ -366,6 +440,19 @@ img {
     color: #fff; }
   .header__img {
     width: 35px; } }
+
+@media (max-width: 412px) {
+  .header__logo {
+    padding: 0 15px; }
+  .header i {
+    padding: 0 15px;
+    font-size: 25px; }
+  .header__p {
+    font-size: 18px; }
+  .header__cart {
+    padding: 0 15px; }
+  .header__img {
+    width: 30px; } }
 
 .slider {
   display: inline-block;
@@ -435,18 +522,17 @@ img {
     width: 100%;
     text-align: center; }
     .slider__text .slider__title {
-      font-size: 4.0rem;
+      font-size: 3.0rem;
       line-height: 4rem;
       width: 70%;
       margin: 0 auto; }
     .slider__text .slider__subtitle {
-      font-size: 1.6rem; }
+      font-size: 1.2rem;
+      display: none; }
     .slider__text .btn-link {
-      font-size: 1.4rem; }
-  .slider__text::after {
-    content: "";
-    clear: both;
-    display: table; } }
+      font-size: 1.6rem;
+      padding: 20px 30px;
+      margin-top: 10px; } }
 
 .slider__title {
   line-height: 7rem; }
@@ -458,9 +544,9 @@ img {
 
 .btn-link {
   font-size: 2.2rem;
-  color: #121212;
+  color: #fff;
+  background-color: #121212;
   padding: 10px 30px;
-  background-color: #dde6ef;
   border-radius: 2px;
   margin-top: 2.5rem;
   display: inline-block;
@@ -554,7 +640,7 @@ img {
 
 @media (max-width: 1078px) {
   .product-item {
-    width: 70%; } }
+    width: 90%; } }
 
 .item {
   float: left;
@@ -577,7 +663,7 @@ img {
 
 @media (max-width: 450px) {
   .item {
-    width: 100%; } }
+    width: 50%; } }
 
 .item-img {
   position: relative; }
@@ -642,8 +728,8 @@ img {
   font-size: 26px; }
 
 .view-button {
-  color: #121212;
-  background-color: #dde6ef;
+  color: #fff;
+  background-color: #121212;
   border-radius: 4px;
   text-align: center;
   display: inline-block;
@@ -672,8 +758,8 @@ img {
   margin: 25px 0; }
 
 .bg__a {
-  color: #121212;
-  background-color: #dde6ef;
+  color: #fff;
+  background-color: #121212;
   border-radius: 4px;
   text-align: center;
   display: inline-block;

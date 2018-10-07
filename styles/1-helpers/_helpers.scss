@@ -43,3 +43,11 @@
 .off-homepage-space{
   padding-top: 50px;
 }
+
+.clearfix:after{
+  content:'.';
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}

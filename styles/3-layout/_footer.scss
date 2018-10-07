@@ -76,10 +76,14 @@
 .footer-copyright__p{
   color: #898989;
   margin: 30px 0 0;
-  font-size: 15px;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 478px) { 
+
+  .subscribe-button {
+    margin: 15px 0;
+  }
 
   .foot__h3{
     font-size: 3.2rem;
@@ -88,10 +92,12 @@
   .footer__p{
     width: 300px;
     line-height: 1;
+    font-size: 1.2rem;
   }
 
   .footer-email{
-    width: 180px;
+    width: 90%;
+    margin-bottom: 5px;
     
   }
 
