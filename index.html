@@ -14,6 +14,40 @@
 <body>
 
   <div class="header">
+    <div class="row">
+      <div class="split__2">
+        <a href="index.html" class="company-logo">Johnson Co.</a>
+      </div> 
+      <div class="split__2">
+        <button>
+          <p class="text--fine">Join / Login In To Johnson Co</p>  
+        </button>
+        <div class="header__cart" >
+          <a href="#">
+            <p class="text--fine">Your Cart</p>
+            <img src="./img/shopping-cart.svg" alt="" class="header__img">
+          </a>
+          <div class="cart-info">
+            <div class="cart-info-items-container">
+              <div class="cart-info-items clearfix ">
+                <div class="cart--item-img"><img src="./img/cl1a.jpg" alt=""></div>
+                <div class="cart--item-title">Black Dress</div>
+                <div class="cart--item-price">10.99</div>
+              </div>
+            </div>
+            <div class="check-out-info clearfix">
+              <div class="check-out-info--total">
+                <span>TOTAL:</span>
+              </div>
+              <div class="check-out-info--price">$ <span class="price-span">0</span></div>
+            </div>
+            <div class="check-out">
+              <p class="check-out-p">CHECKOUT</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
     <div class="menu-box">
       <div class="menu-bar">
         <i class="fas fa-bars"></i>
@@ -23,7 +57,7 @@
           <li class="header__li">
             <a href="index.html" class="header__a">Clothing</a>
             <div class="header__subnav">
-              <div class="col-1-of-3 f_left">
+              <div class="proto_col-1-of-3 f_left">
                 <ul>
                   <li class="col-list">
                     <a class="subnav__subheading" href="">Tops</a>
@@ -54,7 +88,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-1-of-3 f_left">
+              <div class="proto_col-1-of-3 f_left">
                 <ul>
                   <li class="col-list">
                     <a class="subnav__subheading" href="">Jeans</a>
@@ -84,7 +118,7 @@
                   </li>  
                 </ul>
               </div>
-              <div class="col-1-of-3 f_left">
+              <div class="proto_col-1-of-3 f_left">
                 <ul>
                   <li class="col-list">
                     <a class="subnav__subheading" href="">Jackets & Coats</a>
@@ -110,7 +144,7 @@
           <li class="header__li">
             <a href="shoes.html" class="header__a">Shoes</a>
             <div class="header__subnav">
-              <div class="col-1-of-3 f_left">
+              <div class="proto_col-1-of-3 f_left">
                 <ul>
                   <li class="col-list">
                     <a class="subnav__subheading" href="">Shoes</a>
@@ -130,7 +164,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-2-of-3 f_right">
+              <div class="proto_col-2-of-3 f_right">
                 <img src="./img/navbg2.jpeg" alt="a lady show shoes" class="img-set_2">
               </div>
             </div>
@@ -141,7 +175,7 @@
           <li class="header__li">
             <a href="accessories.html" class="header__a">Accessories</a>
             <div class="header__subnav">
-              <div class="col-2-of-3 f_left">
+              <div class="proto_col-2-of-3 f_left">
                 <ul>
                   <li class="col-list">
                     <a class="subnav__subheading" href="">Accessories</a>
@@ -157,7 +191,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-2-of-3 f_right">
+              <div class="proto_col-2-of-3 f_right">
                 <img src="./img/navbg1.jpg" alt="a lady show shoes" class="img-set_3">
               </div>
             </div>
@@ -167,31 +201,14 @@
           </li>
         </ul>
       </div>
-
-      <div class="header__cart" >
-        <a href="#">
-          <img src="./img/shopping-cart.svg" alt="" class="header__img">
+      <form action="" class="search-container">
+        <a href="" class="search__link">
+          <div class="img__containter">
+            <img src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" alt="search button" class="img-set_3">
+          </div>
         </a>
-        <div class="cart-info">
-          <div class="cart-info-items-container">
-            <div class="cart-info-items clearfix ">
-              <div class="cart--item-img"><img src="./img/cl1a.jpg" alt=""></div>
-              <div class="cart--item-title">Black Dress</div>
-              <div class="cart--item-price">10.99</div>
-            </div>
-          </div>
-          <div class="check-out-info clearfix">
-            <div class="check-out-info--total">
-              <span>TOTAL:</span>
-            </div>
-            <div class="check-out-info--price">$ <span class="price-span">0</span></div>
-          </div>
-          <div class="check-out">
-            <p class="check-out-p">CHECKOUT</p>
-          </div>
-        </div>
-      </div>
-
+        <input type="text" class="input">
+      </form>
     </div>
     <div class="menu-list">
       <ul>
@@ -213,7 +230,47 @@
       <a class="btn-link clearfix" href="">Shop Now</a>
     </div>
   </div>
-  <div class="cb"></div>
+  <div class=" clearfix"></div>
+  <div class="filter">
+    <div class="panel">
+      <h6 class="panel__heading">Filter</h6>
+      <span class="lineout"></span>
+      <div class="panel__list">
+        <div class="subheading__container">
+          <p class="subheading">Price</p>
+          <span class="dash">---</span>
+        </div>
+        <div class="panel__details">
+          <ul>
+            <li class="panel__item">
+              <input type="checkbox" class="panel__checkbox">
+              <label for="" class="panel__label">Red</label>
+            </li>
+            <li class="panel__item">
+              <input type="checkbox" class="panel__checkbox">
+              <label for="" class="panel__label">Red</label>
+            </li>
+            <li class="panel__item">
+              <input type="checkbox" class="panel__checkbox">
+              <label for="" class="panel__label">Red</label>
+            </li>
+            <li class="panel__item">
+              <input type="checkbox" class="panel__checkbox">
+              <label for="" class="panel__label">Red</label>
+            </li>
+            <li class="panel__item">
+              <input type="checkbox" class="panel__checkbox">
+              <label for="" class="panel__label">Red</label>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
   <div class="info">
     <ul class="info__ul">
       <li class="info__li">
@@ -227,11 +284,30 @@
       </li>
     </ul>
   </div>
-  <div class="products">
-    <div class="container">
-      <div class="heading">
-        <h3 class="heading__h3">Trending New Arrivals</h3>
-        <p class="heading__p">Everything thats new</p>
+
+  <div class="info row">
+    <!-- <div class="row"> -->
+      <ul class="info__ul">
+        <li class="info__li col-1-of-3">
+          <div class="info__content">Free shipping <br> ON ALL U.S. Orders</div>
+        </li>
+        <li class="info__li col-1-of-3">
+          <div class="info__content">Orders Over $100 <br> 20% Discount </div>
+        </li>
+        <li class=" info__li col-1-of-3">
+          <div class="info__content">Free Returns! <br> On All Orders</div>
+        </li>
+      </ul>
+    <!-- </div> -->
+  </div>
+
+
+
+  <div class="products row">
+    <!-- <div class="container"> -->
+      <div class="intro-info">
+        <h3 class="intro__header">Trending New Arrivals</h3>
+        <p class="intro__text">Everything thats new</p>
       </div>
 
       <div class="product-item">
@@ -374,8 +450,10 @@
       <div class="view-all-button">
         <a href="" class="view-button">View All</a>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
+
+  <div class="clearfix"></div>
 
   <div class="background1">
     <div class="container">
@@ -384,12 +462,13 @@
     </div>
   </div>
 
+  <div class="clearfix"></div>
 
-  <div class="products">
-    <div class="container">
-      <div class="heading">
-        <h3 class="heading__h3">Everyday Essentails</h3>
-        <p class="heading__p">Everything thats new</p>
+  <div class="products row">
+    <!-- <div class="container"> -->
+      <div class="intro-info">
+        <h3 class="intro__header">Everyday Essentails</h3>
+        <p class="intro__text">Everything thats new</p>
       </div>
 
 
@@ -465,7 +544,7 @@
       <div class="view-all-button">
         <a href="#" class="view-button">View All</a>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 
   <div class="background2">
@@ -488,12 +567,13 @@
 
     </div>
   </div>
+  <div class="clearfix"></div>
 
-  <div class="products">
-    <div class="container ">
-      <div class="heading">
-        <h3 class="heading__h3">Timeless Collection</h3>
-        <p class="heading__p">Everything thats new</p>
+  <div class="products row clearfix">
+    <!-- <div class="container "> -->
+      <div class="intro-info">
+        <h3 class="intro__header">Timeless Collection</h3>
+        <p class="intro__text">Everything thats new</p>
       </div>
 
 
@@ -764,7 +844,45 @@
       <div class="view-all-button">
         <a href="#" class="view-button">View All</a>
       </div>
+    <!-- </div> -->
     </div>
+  </div>
+
+  <div class="footerr row">
+    <div class="col-1-of-2">
+      <ul class="col-1-of-3">
+        <li class="footerr__list__item">Gift Cards</li>
+        <li class="footerr__list__item">Student Discount</li>
+        <li class="footerr__list__item">Military Discount</li>
+        <li class="footerr__list__item">Find A Store</li>
+        <li class="footerr__list__item">Sign Up For Email</li>
+        <li class="footerr__list__item">Become A Member</li>
+        <li class="footerr__list__item">Site Feedback</li>
+      </ul>
+      <ul class="col-1-of-3">
+        <li class="footerr__list__item">Get Help</li>
+        <li class="footerr__list__item">Order Status</li>
+        <li class="footerr__list__item">Shipping and Delivery</li>
+        <li class="footerr__list__item">Returns</li>
+        <li class="footerr__list__item">Payments Options</li>
+        <li class="footerr__list__item">Contacts Us</li>
+        <li class="footerr__list__item"></li>
+      </ul>
+      <ul class="col-1-of-3">
+        <li class="footerr__list__item">About Johnson & Co</li>
+        <li class="footerr__list__item">News</li>
+        <li class="footerr__list__item">Careers</li>
+        <li class="footerr__list__item">Converse Culture & Career</li>
+        <li class="footerr__list__item">Investors</li>
+        <li class="footerr__list__item">Sustainable Innovation</li>
+        <li class="footerr__list__item">CA Suppy Chains Act</li>
+      </ul>
+    </div>
+    <div class="col-1-of-2">
+
+    </div>
+    <span class="dash">---</span>
+
   </div>
 
   <div class="footer">
@@ -797,6 +915,8 @@
       </div>
     </div>
   </div>
+
+  
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>

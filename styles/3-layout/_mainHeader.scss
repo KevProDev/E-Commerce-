@@ -5,11 +5,11 @@
 .f_left{
   float: left;
 }
-.col-1-of-3{
+.proto_col-1-of-3{
   width: 25%;
 }
 
-.col-2-of-3{
+.proto_col-2-of-3{
   width: 50%;
 }
 
@@ -24,7 +24,8 @@
 }
 
 .header{
-  display: inline-block;
+  // display: inline-block;
+  display: none;
   width: 100%;
   line-height: 50px;
   position: fixed;

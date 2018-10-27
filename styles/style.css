@@ -12,45 +12,49 @@ Version: 2.0
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.3); }
 
 /* Utility Classes */
-/* Make element full width */
-.u-full-width {
-  width: 100%;
-  box-sizing: border-box; }
-
-/* Make sure elements don't run outside containers (great for images in columns) */
-.u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box; }
-
-/* Float either direction */
-.u-pull-right {
-  float: right; }
-
-.u-pull-left {
-  float: left; }
-
-/* Clear a float */
-.u-cf {
-  content: "";
-  display: table;
-  clear: both; }
-
-.container {
-  padding: 0 60px;
-  overflow: hidden; }
-
-.move-over {
-  margin-left: 120px; }
-
-.off-homepage-space {
-  padding-top: 50px; }
-
 .clearfix:after {
   content: '.';
   visibility: hidden;
   display: block;
   height: 0;
   clear: both; }
+
+.container {
+  padding: 0 60px;
+  overflow: hidden; }
+
+.row {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.row::after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.row [class^="col-"] {
+  float: left; }
+
+.row .col-1-of-2 {
+  width: calc(100% / 2); }
+
+.row .col-1-of-3 {
+  width: calc(100% / 3); }
+
+.row .col-2-of-3 {
+  width: calc(2 *((100% - 2 * 6rem) / 3) + 6rem); }
+
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4); }
+
+.row .col-2-of-4 {
+  width: calc(2 *((100% - 3 * 6rem) / 4) + 6rem); }
+
+.row .col-3-of-4 {
+  width: calc(3 *((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.move-over {
+  margin-left: 120px; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -294,10 +298,10 @@ img {
 .f_left {
   float: left; }
 
-.col-1-of-3 {
+.proto_col-1-of-3 {
   width: 25%; }
 
-.col-2-of-3 {
+.proto_col-2-of-3 {
   width: 50%; }
 
 .img-set_3 {
@@ -309,7 +313,7 @@ img {
   width: 100%; }
 
 .header {
-  display: inline-block;
+  display: none;
   width: 100%;
   line-height: 50px;
   position: fixed;
@@ -537,13 +541,12 @@ img {
   width: 100%;
   float: left;
   position: relative;
+  height: 100vh;
   overflow: hidden;
   margin-top: 56px; }
 
 .slider__img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain; }
+  max-width: 100%; }
 
 .slider__text {
   position: absolute;
@@ -637,10 +640,9 @@ img {
 .info {
   overflow: hidden;
   clear: both;
-  margin-left: 1%; }
+  margin-bottom: 6rem; }
 
 .info__li {
-  width: 33%;
   float: left;
   display: inline-block; }
 
@@ -654,7 +656,6 @@ img {
   margin: 5px 5px;
   line-height: 17px;
   letter-spacing: 2px;
-  margin-top: 16px;
   padding: 11px 0px; }
 
 @media (max-width: 800px) {
@@ -665,31 +666,28 @@ img {
     position: absolute; } }
 
 .products {
-  display: inline-block;
-  float: left;
-  width: 100%; }
+  margin-bottom: 6rem; }
 
 @media (max-width: 800px) {
   .products {
     margin-top: 30px; } }
 
-.heading {
-  padding: 60px 0;
+.intro-info {
   text-align: center;
   position: relative; }
 
-.heading__h3 {
+.intro__header {
   margin-bottom: 10px;
   font-family: Tw Cen MT;
   color: #222222;
   border-bottom: 1px solid #c8c8c8;
   padding-bottom: 20px; }
 
-.heading__p {
+.intro__text {
   text-transform: uppercase;
   color: #919191;
   position: absolute;
-  top: 123px;
+  top: 63px;
   left: 50%;
   transform: translateX(-50%);
   background: white; }
@@ -827,8 +825,8 @@ img {
   padding: 25px 0;
   background-size: cover;
   background-position: center;
-  margin-top: 50px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 6rem; }
 
 .bg__h3 {
   color: #fff;
@@ -858,8 +856,8 @@ img {
   background-size: cover;
   background-position: 0 -425px;
   background-repeat: no-repeat;
-  margin-top: 50px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 6rem; }
 
 .brand {
   width: 83px;
