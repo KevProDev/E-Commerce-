@@ -6,11 +6,11 @@
 }
 
 .foot-heading{
-  padding: 5px 0px;
+  // padding: 5px 0px;
 }
 
 .foot__h3{
-  padding-bottom: 13px;
+  padding-bottom: 10px;
 }
 
 .footer__p{
@@ -56,6 +56,12 @@
 
 .footer-menu{
   padding: 5px 0;
+  display: inline-block;
+}
+
+.footer-copyright{
+  display: inline-block;
+  margin-left: 10rem;
 }
 
 .footer__li{
@@ -123,3 +129,10 @@
     color: #FFFFFF;
     letter-spacing: 2px;
   }
+
+.dash{
+  display: block;
+  border-top: 2px solid #999;
+  clear: both;
+  padding-top: 2rem;
+}
