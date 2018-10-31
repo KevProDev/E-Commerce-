@@ -15,7 +15,7 @@
 
 .img-set_3{
   float: left;
-  width: 40%;
+  width: 10%;
 }
 
 .img-set_2{
@@ -24,14 +24,63 @@
 }
 
 .header{
-  // display: inline-block;
-  display: none;
+  display: inline-block;
+  // display: none;
   width: 100%;
   line-height: 50px;
   position: fixed;
   z-index: 99;
   background: white;
 }
+
+.logo__box{
+  display: inline-block;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+  .company-logo{
+    font-size: 3rem;
+  }
+
+.login-info__box{
+  position: absolute;
+  right: 15px;
+}
+
+  .login-text{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+.header__cart{
+  // flex: 1;
+  // display: flex;
+  // justify-content: flex-end;
+  // align-items: center;
+  display: inline-block;
+  padding: 0px 30px;
+  vertical-align: middle;
+  line-height: 1;
+} 
+  .header__inner__cart{
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .text__fine{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .header__img{
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  
 
 .menu-box{
   // display: flex;
@@ -81,14 +130,7 @@
   flex: 3 ;
   text-align: center;
 }
-.header__cart{
-  // flex: 1;
-  // display: flex;
-  // justify-content: flex-end;
-  // align-items: center;
 
-  padding: 0px 30px;
-} 
 
 .header__li:first-child{
   margin-left: 9%;
@@ -181,9 +223,7 @@
   padding: 0 1rem;
 }
       
-.header__img{
-  width: 40px;
-}
+
 
 .cart-info{
   position: absolute;

@@ -205,6 +205,16 @@
 }
 
 
+
+
+
+
+.main{
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+
 .products{
   // display: inline-block;
   // float: left;
@@ -220,7 +230,7 @@
 
 .intro-info{
   // padding: 60px 0;
-  text-align: center;
+  // text-align: center;
   position: relative;
 }
 
@@ -239,8 +249,8 @@
     color: #919191;
     position: absolute;
     top: 63px;
-    left: 50%;
-    transform: translateX(-50%);
+    // left: 50%;
+    // transform: translateX(-50%);
     background: white;
     // width: 230px;
   }
@@ -257,6 +267,9 @@
 
 .filter{
   padding: 2rem;
+  width: 230px;
+  position: absolute;
+  left: 10px;
 }
 
 .panel{
@@ -284,8 +297,8 @@
 .product-item{
   // display: inline-block;
   // float: left;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  // margin: 0 auto;
   overflow: hidden;
   // display: flex;
   // flex-wrap: wrap;
@@ -443,18 +456,41 @@
   color: #fff;
 }
 
+
+
+
 .background1{
-  display: inline-block;
-  width: 100%;
-  float: left;
-  background-image: url(../img/img1.jpg);
-  padding: 25px 0;
-  background-size: cover;
-  background-position: center;
-  // margin-top: 50px;
-  text-align: center;
-  margin-bottom: 6rem;
+  // display: inline-block;
+  // width: 100%;
+  // float: left;
+  // background-image: url(../img/img1.jpg);
+  // padding: 25px 0;
+  // background-size: cover;
+  // background-position: center;
+  // // margin-top: 50px;
+  // text-align: center;
+  // margin-bottom: 6rem;
 }
+
+  .banner{
+    padding: 25px 60px;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    // background-image: url(../img/img1.jpg);
+    // padding: 25px 0;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  .banner__p1{
+    background-image: url(../img/img1.jpg);
+  }
+  .banner__p2{
+    background-image: url(../img/img63.jpg);
+  }
 
 .bg__h3{
   color: #fff;
@@ -480,18 +516,20 @@
 }
 
 .background2{
-  display: inline-block;
-  width: 100%;
-  float: left;
-  background-image: url(../img/img63.jpg);
-  padding: 25px 0;
-  background-size: cover;
-  background-position:0 -425px;
-  background-repeat: no-repeat;
-  // margin-top: 50px;
-  text-align: center;
-  margin-bottom: 6rem;
+  // display: inline-block;
+  // width: 100%;
+  // float: left;
+  // background-image: url(../img/img63.jpg);
+  // padding: 25px 0;
+  // background-size: cover;
+  // background-position:0 -425px;
+  // background-repeat: no-repeat;
+  // // margin-top: 50px;
+  // text-align: center;
+  // margin-bottom: 6rem;
 }
+
+
 
 .brand{
   width: 83px;
@@ -521,5 +559,8 @@
   overflow: hidden;
   display: inline-block;
 }
+
+
+
 
 
