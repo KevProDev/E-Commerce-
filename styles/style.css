@@ -57,6 +57,10 @@ Version: 2.0
   .row .col-1-of-3, .row .col-1-of-2 {
     width: 100%; } }
 
+@media (min-width: 2016px) {
+  .row {
+    max-width: 142rem; } }
+
 .key-line {
   height: 1px;
   background-color: #e5e5e5;
@@ -756,6 +760,10 @@ img {
 @media (max-width: 1200px) {
   .main {
     margin: 0px; } }
+
+@media (min-width: 2000px) {
+  .main {
+    margin: 0 auto; } }
 
 .products {
   margin-bottom: 6rem; }
