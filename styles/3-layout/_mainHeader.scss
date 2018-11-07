@@ -23,14 +23,33 @@
   width: 100%;
 }
 
-.header{
-  display: inline-block;
-  // display: none;
+.header__outer{
   width: 100%;
-  line-height: 50px;
   position: fixed;
   z-index: 99;
-  background: white;
+  height: 50px;
+  // background-color: blueviolet;
+  background-color: #fff;
+}
+
+.header{
+  // display: inline-block;
+  // // display: none;
+  // width: 100%;
+  // line-height: 50px;
+  // position: fixed;
+  // z-index: 99;
+  // background: white;
+  // // background-color: #000;
+  // padding-bottom: 1rem;
+
+
+  // width: 100%;
+  // position: fixed;
+  // z-index: 99;
+  // height: 50px;
+  position: relative;
+  text-align: center;
 }
 
 .logo__box{
@@ -38,20 +57,35 @@
   width: 100%;
   float: left;
   text-align: center;
+  // padding-bottom: 1rem;
+}
+
+.brandname{
+  text-align: center;
 }
 
   .company-logo{
     font-size: 3rem;
+    color: #191919;
+    // display: inline-block;
+    width: 100%;
+    // float: left;
+    text-align: center;
+    padding-bottom: 1rem;
+    // color: #fff;
   }
 
 .login-info__box{
   position: absolute;
   right: 15px;
+  top: 3px;
 }
 
   .login-text{
     display: inline-block;
     vertical-align: middle;
+    background-color: transparent;
+    border: none;
   }
 
 .header__cart{
@@ -72,36 +106,42 @@
   .text__fine{
     display: inline-block;
     vertical-align: middle;
+    font-size: 1.0rem;
+    // color: #fff;
+    color: #191919;
   }
 
   .header__img{
-    width: 20px;
+    width: 30px;
     display: inline-block;
     vertical-align: middle;
+    
   }
 
-  
+.layout-box{
+  display: inline-block;
+  width: 20%;
 
-.menu-box{
+}
+
+.sub-menu{
   // display: flex;
   // justify-content: center;
   // align-items: center;
   // max-width: 1400px;
   // margin: 0px 30px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px auto;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // margin: 0px auto;
   // padding: 2rem;
   position: relative;
+  font-size: 0;
 }
 
 .menu-bar{
-  float: left;
-  display: inline-block;
   font-size: 1.6rem;
-  margin-right: 10px;
   display: none;
 }
 
@@ -121,28 +161,49 @@
 .header__p{
   font-size: 34px;
   font-weight: 500;
-  color: #000;
+  // color: #000;
+
 }
 
 .header__menu{
   // float: left;
   // margin-left: 7rem;
-  flex: 3 ;
-  text-align: center;
+  // flex: 3 ;
+  // text-align: center;
+  // display: inline-block;
+  // width: 63%;
+  // text-align: right;
+  // position: absolute;
+  // transform: translateX(-50%);
+  // left: 50%;
+  // display: inline-block;
+  // width: 100%;
+  // text-align: center;
+}
+
+.search-container{
+  // float: right;
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+  padding-right: 7.5rem;
 }
 
 
 .header__li:first-child{
-  margin-left: 9%;
+  // margin-left: 9%;
 }
 
 .header__li{
   display: inline-block;
   padding: 0 1.5rem;
-  vertical-align: middle;
-  height: 57px;
+  // vertical-align: middle;
+  // height: 57px;
 }
 
+.logo__container{
+  position: relative;
+}
 
 // .header__li:hover{
 //   background: #444444;
@@ -153,6 +214,7 @@
   font-size: 1.6rem;
   font-weight: 600;
   padding: .5rem;
+  // color: #fff;
 }
 
 .header__a:hover {
@@ -175,7 +237,7 @@
   text-align: initial;
   padding: 3rem;
   z-index: 22;
-  top: 57px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -335,6 +397,19 @@
 
   }
 
+  .login-text{
+    display: none;
+  }
+
+  .brandname{
+    line-height: 5rem;
+  }
+
+  .login-info__box{
+    right: -11px;
+    top: 6px;
+  }
+
 
   .container {
     padding: 0 0px;
@@ -348,13 +423,13 @@
 
 
   .menu-bar{
-
     display: block;
-    // flex: 1 1 10%;
-    // display: flex;
-    // align-items: center;
-    
+    position: absolute;
+    top: 11px;
   }
+
+
+
   .header__menu{
     display: none;
   }
@@ -380,7 +455,7 @@
   .menu-item{
     display: inline-block;
     width: 100%;
-    padding: 5px;
+    padding: 18px 0;
   }
 
   .header__mobile_a{
@@ -404,6 +479,8 @@
   .header__img{
     width: 35px;
   }
+
+
 
 }
 

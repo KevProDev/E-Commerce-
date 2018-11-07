@@ -1,16 +1,22 @@
 
 .slider{
-  display: inline-block;
+  // display: inline-block;
   width: 100%;
-  float: left;
+  // float: left;
   position: relative;
   height: 100vh;
   overflow: hidden;
-  margin-top: 56px;
-  margin-bottom: .3rem;
+  // margin-top: 56px;
+  // margin-bottom: .3rem;
 
 }
 
+@media (max-width: 1740px) {
+  
+  .slider{
+    height: initial;
+  }
+}
 
 .slider__img{
   max-width: 100%;
@@ -210,8 +216,18 @@
 
 
 .main{
-  margin-left: 300px;
-  margin-right: 300px;
+  position: relative;
+  margin: 0 300px;
+}
+
+// @media (max-width: 1200px) {
+
+// }
+
+@media (max-width: 1200px) {
+  .main{
+    margin:0px;
+  }
 }
 
 
@@ -267,9 +283,10 @@
 
 .filter{
   padding: 2rem;
-  width: 230px;
+  width: 100%;
   position: absolute;
-  left: 10px;
+  left: -300px;
+  max-width: 300px;
 }
 
 .panel{

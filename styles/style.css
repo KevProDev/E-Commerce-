@@ -53,6 +53,10 @@ Version: 2.0
 .row .col-3-of-4 {
   width: calc(3 *((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
+@media (max-width: 800px) {
+  .row .col-1-of-3, .row .col-1-of-2 {
+    width: 100%; } }
+
 .key-line {
   height: 1px;
   background-color: #e5e5e5;
@@ -81,7 +85,8 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  line-height: 1; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -293,6 +298,10 @@ img {
   color: #585858;
   padding: 6rem; }
 
+@media (max-width: 800px) {
+  .footerr {
+    text-align: center; } }
+
 .footerr__list__item {
   line-height: 2.8rem;
   font-size: 1.4rem; }
@@ -335,13 +344,16 @@ img {
   float: left;
   width: 100%; }
 
-.header {
-  display: inline-block;
+.header__outer {
   width: 100%;
-  line-height: 50px;
   position: fixed;
   z-index: 99;
-  background: white; }
+  height: 50px;
+  background-color: #fff; }
+
+.header {
+  position: relative;
+  text-align: center; }
 
 .logo__box {
   display: inline-block;
@@ -349,16 +361,26 @@ img {
   float: left;
   text-align: center; }
 
+.brandname {
+  text-align: center; }
+
 .company-logo {
-  font-size: 3rem; }
+  font-size: 3rem;
+  color: #191919;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem; }
 
 .login-info__box {
   position: absolute;
-  right: 15px; }
+  right: 15px;
+  top: 3px; }
 
 .login-text {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  background-color: transparent;
+  border: none; }
 
 .header__cart {
   display: inline-block;
@@ -372,25 +394,25 @@ img {
 
 .text__fine {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-size: 1.0rem;
+  color: #191919; }
 
 .header__img {
-  width: 20px;
+  width: 30px;
   display: inline-block;
   vertical-align: middle; }
 
-.menu-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px auto;
-  position: relative; }
+.layout-box {
+  display: inline-block;
+  width: 20%; }
+
+.sub-menu {
+  position: relative;
+  font-size: 0; }
 
 .menu-bar {
-  float: left;
-  display: inline-block;
   font-size: 1.6rem;
-  margin-right: 10px;
   display: none; }
 
 .menu-list {
@@ -401,21 +423,20 @@ img {
 
 .header__p {
   font-size: 34px;
-  font-weight: 500;
-  color: #000; }
+  font-weight: 500; }
 
-.header__menu {
-  flex: 3;
-  text-align: center; }
-
-.header__li:first-child {
-  margin-left: 9%; }
+.search-container {
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+  padding-right: 7.5rem; }
 
 .header__li {
   display: inline-block;
-  padding: 0 1.5rem;
-  vertical-align: middle;
-  height: 57px; }
+  padding: 0 1.5rem; }
+
+.logo__container {
+  position: relative; }
 
 .header__a {
   color: #000;
@@ -438,7 +459,7 @@ img {
   text-align: initial;
   padding: 3rem;
   z-index: 22;
-  top: 57px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%); }
 
@@ -547,13 +568,22 @@ img {
       vertical-align: middle; }
     .header p {
       font-size: 22px; }
+  .login-text {
+    display: none; }
+  .brandname {
+    line-height: 5rem; }
+  .login-info__box {
+    right: -11px;
+    top: 6px; }
   .container {
     padding: 0 0px; }
   .header__logo {
     flex: 3 3 80%;
     text-align: center; }
   .menu-bar {
-    display: block; }
+    display: block;
+    position: absolute;
+    top: 11px; }
   .header__menu {
     display: none; }
   .menu-list {
@@ -570,7 +600,7 @@ img {
   .menu-item {
     display: inline-block;
     width: 100%;
-    padding: 5px; }
+    padding: 18px 0; }
   .header__mobile_a {
     color: #fff; }
   .header__img {
@@ -590,14 +620,14 @@ img {
     width: 30px; } }
 
 .slider {
-  display: inline-block;
   width: 100%;
-  float: left;
   position: relative;
   height: 100vh;
-  overflow: hidden;
-  margin-top: 56px;
-  margin-bottom: .3rem; }
+  overflow: hidden; }
+
+@media (max-width: 1740px) {
+  .slider {
+    height: initial; } }
 
 .slider__img {
   max-width: 100%; }
@@ -720,8 +750,12 @@ img {
     position: absolute; } }
 
 .main {
-  margin-left: 300px;
-  margin-right: 300px; }
+  position: relative;
+  margin: 0 300px; }
+
+@media (max-width: 1200px) {
+  .main {
+    margin: 0px; } }
 
 .products {
   margin-bottom: 6rem; }
@@ -755,9 +789,10 @@ img {
 
 .filter {
   padding: 2rem;
-  width: 230px;
+  width: 100%;
   position: absolute;
-  left: 10px; }
+  left: -300px;
+  max-width: 300px; }
 
 .panel {
   margin-bottom: 2rem; }

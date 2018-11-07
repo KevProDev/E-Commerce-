@@ -119,6 +119,12 @@
   // color: #D8D8D8;
   padding: 6rem;
 } 
+
+@media (max-width:800px){
+  .footerr{
+    text-align: center;
+  }
+}
   .footerr__list__item{
     line-height: 2.8rem;
     font-size: 1.4rem;

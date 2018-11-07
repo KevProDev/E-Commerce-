@@ -48,6 +48,13 @@
     width: calc(3 *((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 
+@media (max-width: 800px) {
+  .row .col-1-of-3,.row .col-1-of-2{
+    width: 100%;
+  }
+
+}
+
 .key-line{
   height: 1px;
   background-color: #e5e5e5;
