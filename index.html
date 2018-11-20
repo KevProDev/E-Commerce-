@@ -258,37 +258,90 @@
           <div class="panel__list">
             <div class="subheading__container">
               <p class="subheading">Price</p>
-              <span class="">---</span>
+              <!-- <span class="">---</span> -->
             </div>
-            <div class="panel__details">
+            <div class="panel__details panel__details__1">
               <ul>
                 <li class="panel__item">
-                  <input type="checkbox" class="panel__checkbox">
-                  <label for="" class="panel__label">Red</label>
+                  <input type="checkbox" class="panel__checkbox price-under" name="checkbox" data-filter="100">
+                  <label for="" class="panel__label">Under $100</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" class="panel__checkbox">
-                  <label for="" class="panel__label">Red</label>
+                  <input type="checkbox" class="panel__checkbox price-under" name="checkbox" data-filter="80">
+                  <label for="" class="panel__label">Under $80</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" class="panel__checkbox">
-                  <label for="" class="panel__label">Red</label>
+                  <input type="checkbox" class="panel__checkbox price-under" name="checkbox" data-filter="50">
+                  <label for="" class="panel__label">Under $50</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" class="panel__checkbox">
-                  <label for="" class="panel__label">Red</label>
+                  <input type="checkbox" class="panel__checkbox price-under" name="checkbox" data-filter="40">
+                  <label for="" class="panel__label">Under $40</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" class="panel__checkbox">
-                  <label for="" class="panel__label">Red</label>
+                  <input type="checkbox" class="panel__checkbox price-under" name="checkbox" data-filter="30">
+                  <label for="" class="panel__label">Under $30</label>
                 </li>
               </ul>
+              <div class="key-line"></div>
             </div>
+
+            
+    
+          </div>
+
+          <div class="panel__list">
+            <div class="subheading__container">
+              <p class="subheading">Color</p>
+              <!-- <span class="">---</span> -->
+            </div>
+            <div class="panel__details panel__details__2nd ">
+             
+              <li class="panel__item">
+                <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="all">
+                <label for="" class="panel__label">All</label>
+              </li>
+              <li class="panel__item">
+                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="navy">
+                  <label for="" class="panel__label">Navy</label>
+                </li>
+                <li class="panel__item">
+                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="red">
+                  <label for="" class="panel__label">Red</label>
+                </li>
+                <li class="panel__item">
+                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="green">
+                  <label for="" class="panel__label">Green</label>
+                </li>
+                <li class="panel__item">
+                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="brown">
+                  <label for="" class="panel__label">Brown</label>
+                </li>
+                <li class="panel__item">
+                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="pink">
+                  <label for="" class="panel__label">Pink</label>
+                </li>
+                <li class="panel__item">
+                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="tan">
+                  <label for="" class="panel__label">Tan</label>
+                </li>
+                <li class="panel__item">
+                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="black">
+                  <label for="" class="panel__label">Black</label>
+                </li>
+                <li class="panel__item">
+                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="white">
+                  <label for="" class="panel__label">White</label>
+                </li>
+              
+              <div class="key-line"></div>
+            </div>
+
+            
     
           </div>
     
         </div>
-        <div class="key-line"></div>
     
     
       </div>
@@ -303,7 +356,7 @@
 
         <div class="product-item">
 
-          <li class="item">
+          <li class="item item-data green">
             <a href="single-page.html">
               <div class="item-img">
                 <img src="./img/cl1a.jpg" alt="" class="product-img">
@@ -313,14 +366,14 @@
                 </div>
                 <div class="item-title">
                   <p class="item-title__Fp">Green Leopard Shirt</p>
-                  <p class="item-title__p">$49.99</p>
+                  <p class="item-title__p">$<span class="item-price__p">49.99</span></p>
                 </div>
               </div>
             </a>
           </li>
          
 
-          <li class="item">
+          <li class="item item-data navy">
               <a href="single-page.html">
                 <div class="item-img">
                   <img src="./img/cl2a.jpg" alt="" class="product-img">
@@ -330,13 +383,15 @@
                   </div>
                   <div class="item-title">
                     <p class="item-title__Fp">Country Autum Dress</p>
-                    <p class="item-title__p">$39.99</p>
+                   
+                    <p class="item-title__p">$<span class="item-price__p">39.99</span></p>
+                    
                   </div>
                 </div>
             </a>
           </li>
 
-          <li class="item">
+          <li class="item item-data red">
             <a href="single-page.html">
               <div class="item-img">
                 <img src="./img/cl3a.jpg" alt="" class="product-img">
@@ -346,13 +401,13 @@
                 </div>
                 <div class="item-title">
                   <p class="item-title__Fp">Wide Knit Scraf </p>
-                  <p class="item-title__p">$29.99</p>
+                  <p class="item-title__p">$<span class="item-price__p">29.99</span></p>
                 </div>
               </div>
             </a>
           </li>
 
-          <li class="item">
+          <li class="item item-data brown">
             <a href="single-page.html">
               <div class="item-img">
                 <img src="./img/cl4a.jpg" alt="" class="product-img">
@@ -362,13 +417,13 @@
                 </div>
                 <div class="item-title">
                   <p class="item-title__Fp">Suit Jacket</p>
-                  <p class="item-title__p">$79.99</p>
+                  <p class="item-title__p">$<span class="item-price__p">179.99</span></p>
                 </div>
               </div>
             </a>
           </li>
 
-          <li class="item">
+          <li class="item item-data grey">
             <a href="single-page.html">
               <div class="item-img">
                 <img src="./img/cl5a.jpg" alt="" class="product-img">
@@ -378,13 +433,13 @@
                 </div>
                 <div class="item-title">
                   <p class="item-title__Fp">Tennis Jacket</p>
-                  <p class="item-title__p">$39.99</p>
+                  <p class="item-title__p">$<span class="item-price__p">39.99</span></p>
                 </div>
               </div>
             </a>
           </li>
 
-          <li class="item">
+          <li class="item item-data pink green">
             <a href="single-page.html">
               <div class="item-img">
                 <img src="./img/cl6a.jpg" alt="" class="product-img">
@@ -394,14 +449,14 @@
                 </div>
                 <div class="item-title">
                   <p class="item-title__Fp">Floral Blouse</p>
-                  <p class="item-title__p">$39.99</p>
+                  <p class="item-title__p">$<span class="item-price__p">39.99</span></p>
                 </div>
               </div>
             </a>
           </li>
 
 
-          <li class="item">
+          <li class="item item-data black">
             <a href="single-page.html">
               <div class="item-img">
                 <img src="./img/cl7a.jpg" alt="" class="product-img">
@@ -411,13 +466,13 @@
                 </div>
                 <div class="item-title">
                   <p class="item-title__Fp">Black Jacket</p>
-                  <p class="item-title__p">$79.99</p>
+                  <p class="item-title__p">$<span class="item-price__p">119.99</span></p>
                 </div>
               </div>
             </a>
           </li>
           
-          <li class="item">
+          <li class="item item-data pink black">
             <a href="single-page.html">
               <div class="item-img">
                 <img src="./img/cl8a.jpg" alt="" class="product-img">
@@ -427,13 +482,13 @@
                 </div>
                 <div class="item-title">
                   <p class="item-title__Fp">Rock Pink Shirt</p>
-                  <p class="item-title__p">$29.99</p>
+                  <p class="item-title__p">$<span class="item-price__p">29.99</span></p>
                 </div>
               </div>
             </a>
           </li>
 
-          <li class="item">
+          <li class="item item-data pink black">
             <a href="single-page.html">
               <div class="item-img">
                 <img src="./img/cl9a.jpg" alt="" class="product-img">
@@ -443,7 +498,7 @@
                 </div>
                 <div class="item-title">
                   <p class="item-title__Fp">Rock Black Sweater</p>
-                  <p class="item-title__p">$39.99</p>
+                  <p class="item-title__p">$<span class="item-price__p">39.99</span></p>
                 </div>
               </div>
             </a>
@@ -451,7 +506,7 @@
 
           
 
-          <li class="item">
+          <li class="item item-data pink">
             <a href="single-page.html">
               <div class="item-img">
                 <img src="./img/cl10a.jpg" alt="" class="product-img">
@@ -461,7 +516,7 @@
                 </div>
                 <div class="item-title">
                   <p class="item-title__Fp">Pink Dress Shirt</p>
-                  <p class="item-title__p">$19.99</p>
+                  <p class="item-title__p">$<span class="item-price__p">19.99</span></p>
                 </div>
               </div>
             </a>
@@ -499,8 +554,8 @@
         <div class="product-item move-over">
             <li class="item">
               <a href="single-page.html">
-                <div class=" item__fadein">
-                  <div class="item-img">
+               
+                  <div class="item-img item__fadein">
                     <img src="./img/img51.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -511,17 +566,17 @@
                       <p class="item-title__p">$19.99</p>
                     </div>
                   </div>
-                </div>
+              
     
                 
               </a>
             </li>
-
+            
             
             <li class="item">
               <a href="single-page.html">
-                <div class="item__fadein">
-                  <div class="item-img">
+                
+                  <div class="item-img item__fadein">
                     <img src="./img/img52.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -529,18 +584,18 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Blouse</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$49.99</p>
                     </div>
                   </div>
-                </div>
+                
               </a>
             </li>
             
 
             <li class="item">
               <a href="single-page.html">
-                <div class="item__fadein">
-                  <div class="item-img">
+                
+                  <div class="item-img item__fadein">
                     <img src="./img/img53.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -551,7 +606,7 @@
                       <p class="item-title__p">$39.99</p>
                     </div>
                   </div>
-                </div>
+                
 
               </a>
             </li>
@@ -559,8 +614,8 @@
            
             <li class="item">
               <a href="single-page.html">
-                <div class="item__fadein">
-                  <div class="item-img">
+                
+                  <div class="item-img item__fadein">
                     <img src="./img/img57.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -571,15 +626,15 @@
                       <p class="item-title__p">$39.99</p>
                     </div>
                   </div>
-                </div>
+              
               </a>
             </li>
             
             
             <li class="item">
               <a href="single-page.html">
-                <div class="item__fadein">
-                  <div class="item-img">
+                
+                  <div class="item-img item__fadein">
                     <img src="./img/img59.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -587,10 +642,10 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">V Neck Blouse</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$39.99</p>
                     </div>
                   </div>
-                </div>
+               
               </a>
             </li>  
         </div>
@@ -637,8 +692,8 @@
         <div class="product-item move-over">
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                <div class="item-img">
+              
+                <div class="item-img item__fadein">
                   <img src="./img/cl10a.jpg" alt="" class="product-img">
                   <div class="item-button">
                     <span href="#" class="item-button-a ">Add To Cart</span>
@@ -646,16 +701,16 @@
                   </div>
                   <div class="item-title">
                     <p class="item-title__Fp">Pink Dress Shirt</p>
-                    <p class="item-title__p">$199.99</p>
+                    <p class="item-title__p">$29.99</p>
                   </div>
                 </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                <div class="item-img">
+              
+                <div class="item-img item__fadein">
                   <img src="./img/cl12a.jpg" alt="" class="product-img">
                   <div class="item-button">
                     <span href="#" class="item-button-a ">Add To Cart</span>
@@ -663,16 +718,16 @@
                   </div>
                   <div class="item-title">
                     <p class="item-title__Fp">Ethnic Dresses</p>
-                    <p class="item-title__p">$199.99</p>
+                    <p class="item-title__p">$49.99</p>
                   </div>
                 </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                <div class="item-img">
+              
+                <div class="item-img item__fadein">
                   <img src="./img/cl13a.jpg" alt="" class="product-img">
                   <div class="item-button">
                     <span href="#" class="item-button-a ">Add To Cart</span>
@@ -680,16 +735,16 @@
                   </div>
                   <div class="item-title">
                     <p class="item-title__Fp">Ethnic Dresses</p>
-                    <p class="item-title__p">$199.99</p>
+                    <p class="item-title__p">$49.99</p>
                   </div>
                 </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                <div class="item-img">
+              
+                <div class="item-img item__fadein">
                   <img src="./img/cl14a.jpg" alt="" class="product-img">
                   <div class="item-button">
                     <span href="#" class="item-button-a ">Add To Cart</span>
@@ -697,16 +752,16 @@
                   </div>
                   <div class="item-title">
                     <p class="item-title__Fp">Ethnic Dresses</p>
-                    <p class="item-title__p">$199.99</p>
+                    <p class="item-title__p">$89.99</p>
                   </div>
                 </div>
-              </div>
+            
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                <div class="item-img">
+              
+                <div class="item-img item__fadein">
                   <img src="./img/cl15a.jpg" alt="" class="product-img">
                   <div class="item-button">
                     <span href="#" class="item-button-a ">Add To Cart</span>
@@ -714,16 +769,16 @@
                   </div>
                   <div class="item-title">
                     <p class="item-title__Fp">Ethnic Dresses</p>
-                    <p class="item-title__p">$199.99</p>
+                    <p class="item-title__p">$89.99</p>
                   </div>
                 </div>
-              </div>
+             
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl16a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -731,16 +786,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$89.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl17a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -748,16 +803,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$69.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl18a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -765,16 +820,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$69.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl19a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -782,16 +837,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$69.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl20a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -799,16 +854,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$39.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl21a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -816,16 +871,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$39.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl22a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -833,16 +888,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$59.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl23a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -850,16 +905,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$29.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl24a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -867,16 +922,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$39.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl25a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -884,16 +939,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$39.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl26a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -901,16 +956,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$69.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl27a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -918,16 +973,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$59.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl28a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -935,16 +990,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$29.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl29a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -952,16 +1007,16 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$39.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           <li class="item">
             <a href="single-page.html">
-              <div class="item__fadein">
-                  <div class="item-img">
+              
+                  <div class="item-img item__fadein">
                     <img src="./img/cl30a.jpg" alt="" class="product-img">
                     <div class="item-button">
                       <span href="#" class="item-button-a ">Add To Cart</span>
@@ -969,10 +1024,10 @@
                     </div>
                     <div class="item-title">
                       <p class="item-title__Fp">Ethnic Dresses</p>
-                      <p class="item-title__p">$199.99</p>
+                      <p class="item-title__p">$39.99</p>
                     </div>
                   </div>
-              </div>
+              
             </a>
           </li>
           

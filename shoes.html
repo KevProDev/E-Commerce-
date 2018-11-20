@@ -13,82 +13,232 @@
 
 <body>
 
-  <div class="header">
-    <div class="menu-box">
-      <div class="menu-bar">
-        <i class="fas fa-bars"></i>
-      </div>
-      <div class="header__logo">
-        <!-- <img src="img/img12.jpg" alt="" class="img"> -->
-        <a class="header__p" href="index.html">Johnson Co</a>
-      </div>
-      <div class="header__menu">
-        <ul class="header__ul">
-          <li class="header__li"><a href="index.html" class="header__a">Clothing</a></li>
-          <li class="header__li"><a href="shoes.html" class="header__a">Shoes</a></li>
-          <li class="header__li"><a href="accessories.html" class="header__a">Accessories</a></li>
-          <li class="header__li"><a href="" class="header__a">Daily Needs</a></li>
-        </ul>
-      </div>
-
-      <div class="header__cart" >
-          <a href="#">
-            <img src="./img/shopping-cart.svg" alt="" class="header__img">
-          </a>
-          <div class="cart-info">
-            <div class="cart-info-items-container">
-              <div class="cart-info-items clearfix ">
-                <div class="cart--item-img"><img src="./img/cl1a.jpg" alt=""></div>
-                <div class="cart--item-title">Black Dress</div>
-                <div class="cart--item-price">10.99</div>
+  <header class="header__outer">
+      <div class=" row header">
+        <div class="brandname">
+  
+            <a href="index.html" class="company-logo">Johnson Co.</a>
+  
+    
+        </div>
+        <div class="login-info__box">
+          <button class="login-text">
+            <p class="text__fine">Join / Login In To Johnson Co</p>  
+          </button>
+          <div class="header__cart" >
+            <a class="header__inner__cart" href="#">
+              <p class="text__fine">Your Cart</p>
+              <img src="./img/shopping-cart.svg" alt="" class="header__img">
+            </a>
+            <div class="cart-info">
+              <div class="cart-info-items-container">
+                <div class="cart-info-items clearfix ">
+                  <div class="cart--item-img"><img src="./img/cl1a.jpg" alt=""></div>
+                  <div class="cart--item-title">Black Dress</div>
+                  <div class="cart--item-price">10.99</div>
+                </div>
               </div>
-            </div>
-            <div class="check-out-info clearfix">
-              <div class="check-out-info--total">
-                <span>TOTAL:</span>
+              <div class="check-out-info clearfix">
+                <div class="check-out-info--total">
+                  <span>TOTAL:</span>
+                </div>
+                <div class="check-out-info--price">$ <span class="price-span">0</span></div>
               </div>
-              <div class="check-out-info--price">$ <span class="price-span">0</span></div>
-            </div>
-            <div class="check-out">
-              <p class="check-out-p">CHECKOUT</p>
+              <div class="check-out">
+                <p class="check-out-p">CHECKOUT</p>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="submenu">
+          <div class="menu-bar">
+            <i class="fas fa-bars"></i>
+          </div>
+          <!-- <div class="layout-box">
+  
+          </div> -->
+          <div class="header__menu">
+            <ul class="header__ul">
+              <li class="header__li">
+                <a href="index.html" class="header__a">Clothing</a>
+                <div class="header__subnav">
+                  <div class="proto_col-1-of-3 f_left">
+                    <ul>
+                      <li class="col-list">
+                        <a class="subnav__subheading" href="">Tops</a>
+                        <ul class="subnav__list">
+                          <li class="subnav__text"> <a href="" class="subnav__item">View All</a>
+                          </li>
+                          <li class="subnav__text">Tees & knit tops</li>
+                          <li class="subnav__text">blouses</li>  
+                          <li class="subnav__text">Off the sholder</li>
+                          <li class="subnav__text">Ruffles</li>
+                          <li class="subnav__text">Tunics</li>
+                          <li class="subnav__text">Kimonos</li>
+                          <li class="subnav__text">camis & tanks</li>
+                          <li class="subnav__text">Graphic Tees</li>
+                        </ul>
+                        <a class="subnav__subheading" href="">Dresses</a>
+                        <ul class="subnav__list">
+                          <li class="subnav__text" >View All</li>
+                          <li class="subnav__text" >Fit & Flare dresses</li>
+                          <li class="subnav__text" >midi & maxi dresses</li>  
+                          <li class="subnav__text" >little black dresses</li>
+                          <li class="subnav__text" >party & cocktail dresses</li>
+                          <li class="subnav__text" >Swing dresses</li>
+                          <li class="subnav__text" >Sheath dresses</li>
+                          <li class="subnav__text" >camis & tanks</li>
+                          <li class="subnav__text" >Online exclusives</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="proto_col-1-of-3 f_left">
+                    <ul>
+                      <li class="col-list">
+                        <a class="subnav__subheading" href="">Jeans</a>
+                        <ul class="subnav__list">
+                          <li class="subnav__text" > <a href="" class="subnav__item">View All</a></li>
+                          <li class="subnav__text" >Ultimate stretch</li>
+                          <li class="subnav__text" >super stretch</li>  
+                          <li class="subnav__text" >Essential Stretch</li>
+                          <li class="subnav__text" >Skinny</li>
+                          <li class="subnav__text" >Bootcut</li>
+                          <li class="subnav__text" >Straight leg</li>
+                          <li class="subnav__text" >distreessed jeans</li>
+                          <li class="subnav__text" >Tighter tummy technology</li>
+                        </ul>
+                        <a class="subnav__subheading" href="">Pants</a>
+                        <ul class="subnav__list">
+                          <li class="subnav__text" >View All</li>
+                          <li class="subnav__text" >Tailored stretch</li>
+                          <li class="subnav__text" >modern stretch</li>  
+                          <li class="subnav__text" >sexy stretch</li>
+                          <li class="subnav__text" >ankle</li>
+                          <li class="subnav__text" >allie collection</li>
+                          <li class="subnav__text" >skinny</li>
+                          <li class="subnav__text" >straight leg</li>
+                          <li class="subnav__text" >Bootcut</li>
+                        </ul>
+                      </li>  
+                    </ul>
+                  </div>
+                  <div class="proto_col-1-of-3 f_left">
+                    <ul>
+                      <li class="col-list">
+                        <a class="subnav__subheading" href="">Jackets & Coats</a>
+                        <ul class="subnav__list">
+                          <li class="subnav__text" > <a href="" class="subnav__item">View All</a></li>
+                          <li class="subnav__text" >Dienim Jackets</li>
+                          <li class="subnav__text" >Blazers & Jackets</li>  
+                          <li class="subnav__text" >Coats</li>
+                        </ul>
+                        <a class="subnav__subheading" href="">Skirts</a>
+                        <ul></ul>
+                        <a class="subnav__subheading" href="">Capris and shorts</a>
+                        <ul class="subnav__list">
+                          <li class="subnav__text" >View All</li>
+                          <li class="subnav__text" >Shorts</li>
+                          <li class="subnav__text" >Crops and capris</li>
+                        </ul>
+                      </li>  
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header__li">
+                <a href="shoes.html" class="header__a">Shoes</a>
+                <div class="header__subnav">
+                  <div class="proto_col-1-of-3 f_left">
+                    <ul>
+                      <li class="col-list">
+                        <a class="subnav__subheading" href="">Shoes</a>
+                        <ul class="subnav__list">
+                          <li class="subnav__text"> <a href="" class="subnav__item">View All</a>
+                          </li>
+                          <li class="subnav__text">Flats</li>
+                          <li class="subnav__text">Heels</li>  
+                          <li class="subnav__text">Sandals</li>
+                        </ul>
+                        <a class="subnav__subheading" href="">Boots</a>
+                        <ul class="subnav__list">
+                          <li class="subnav__text" >View All</li>
+                          <li class="subnav__text" >Ankle Boots</li>
+                          <li class="subnav__text" >Tall Boots</li>  
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="proto_col-2-of-3 f_right">
+                    <img src="./img/navbg2.jpeg" alt="a lady show shoes" class="img-set_2">
+                  </div>
+                </div>
+              </li>
+              <!-- <li class="header__li">
+                <a href="index.html" class="header__a header__main">Johnson Co.</a>
+              </li> -->
+              <li class="header__li">
+                <a href="accessories.html" class="header__a">Accessories</a>
+                <div class="header__subnav">
+                  <div class="proto_col-2-of-3 f_left">
+                    <ul>
+                      <li class="col-list">
+                        <a class="subnav__subheading" href="">Accessories</a>
+                        <ul class="subnav__list">
+                          <li class="subnav__text"> <a href="" class="subnav__item">View All</a>
+                          </li>
+                          <li class="subnav__text">Necklaces</li>
+                          <li class="subnav__text">Bracelets</li>  
+                          <li class="subnav__text">Rings</li>
+                          <li class="subnav__text">Earrings</li>
+                        </ul>
+                        <a class="subnav__subheading" href="">Tights Legging & Socks</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="proto_col-2-of-3 f_right">
+                    <img src="./img/navbg1.jpg" alt="a lady show shoes" class="img-set_3">
+                  </div>
+                </div>
+              </li>
+              <li class="header__li">
+                <a href="" class="header__a">Daily Needs</a>
+              </li>
+            </ul>
+          </div>
+          <!-- <form action="" class="search-container">
+            <input type="text" class="input">
+          </form> -->
+        </div>
+        <div class="menu-list">
+          <ul>
+            <li class="menu-item"><a href="" class="header__mobile_a">Clothing</a></li>
+            <li class="menu-item"><a href="shoes.html" class="header__mobile_a">Shoes</a></li>
+            <li class="menu-item"><a href="accessories.html" class="header__mobile_a">Accessories</a></li>
+            <li class="menu-item"><a href="" class="header__mobile_a">Daily Needs</a></li>
+          </ul>
+        </div>
       </div>
-
-    </div>
-    <div class="menu-list">
-      <ul>
-        <li class="menu-item"><a href="" class="header__mobile_a">Clothing</a></li>
-        <li class="menu-item"><a href="shoes.html" class="header__mobile_a">Shoes</a></li>
-        <li class="menu-item"><a href="accessories.html" class="header__mobile_a">Accessories</a></li>
-        <li class="menu-item"><a href="" class="header__mobile_a">Daily Needs</a></li>
+    </header>
+    <div style="height: 50px"></div>
+  
+  
+    
+    <div class="info row">
+      <!-- <div class="row"> -->
+      <ul class="info__ul">
+        <li class="info__li col-1-of-3">
+          <div class="info__content">Free shipping <br> ON ALL U.S. Orders</div>
+        </li>
+        <li class="info__li col-1-of-3">
+          <div class="info__content">Orders Over $100 <br> 20% Discount </div>
+        </li>
+        <li class=" info__li col-1-of-3">
+          <div class="info__content">Free Returns! <br> On All Orders</div>
+        </li>
       </ul>
+      <!-- </div> -->
     </div>
-  </div>
-
-  <!-- <div class="slider">
-    <img src="img/img62.jpg" alt="" class="slider__img">
-    <div class="slider__text">
-      <h2 class="slider__title">Latest Fashion <br> Collection</h2>
-      <p class="slider__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quasi voluptate voluptas
-        magnam, neque sed.</p>
-      <a class="btn-link" href="">Shop Now</a>
-    </div>
-  </div> -->
-  <div class="cb"></div>
-  <div class="info off-homepage-space">
-    <ul class="info__ul">
-      <li class="info__li">
-        <div class="info__content">Free shipping <br> ON ALL U.S. Orders</div>
-      </li>
-      <li class="info__li">
-        <div class="info__content">Orders Over $100 <br> 20% Discount </div>
-      </li>
-      <li class="info__li">
-        <div class="info__content">Free Returns! <br> On All Orders</div>
-      </li>
-    </ul>
-  </div>
   <div class="products">
     <div class="container">
       <div class="heading">
@@ -389,36 +539,73 @@
     </div>
   </div>
 
-  <div class="footer">
-    <div class="container">
-      <div class="foot-heading">
-        <h3 class="foot__h3">Subscibe To Newsletters</h3>
-        <p class="footer__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Possimus, ipsum nesciunt vel reprehenderit
-          assumenda eligendi!</p>
+  <div class="footerr">
+      <div class="row">
+        <div class="col-1-of-2">
+          <ul class="col-1-of-3">
+            <li class="footerr__list__item footerr__list__item__bold">Gift Cards</li>
+            <li class="footerr__list__item footerr__list__item__bold">Student Discount</li>
+            <li class="footerr__list__item footerr__list__item__bold">Military Discount</li>
+            <li class="footerr__list__item footerr__list__item__bold">Find A Store</li>
+            <li class="footerr__list__item footerr__list__item__bold">Sign Up For Email</li>
+            <li class="footerr__list__item footerr__list__item__bold">Become A Member</li>
+            <li class="footerr__list__item footerr__list__item__bold">Site Feedback</li>
+          </ul>
+          <ul class="col-1-of-3">
+            <li class="footerr__list__item footerr__list__item__bold">Get Help</li>
+            <li class="footerr__list__item">Order Status</li>
+            <li class="footerr__list__item">Shipping and Delivery</li>
+            <li class="footerr__list__item">Returns</li>
+            <li class="footerr__list__item">Payments Options</li>
+            <li class="footerr__list__item">Contacts Us</li>
+            <li class="footerr__list__item"></li>
+          </ul>
+          <ul class="col-1-of-3">
+            <li class="footerr__list__item footerr__list__item__bold">About Johnson & Co</li>
+            <li class="footerr__list__item">News</li>
+            <li class="footerr__list__item">Careers</li>
+            <li class="footerr__list__item">Converse Culture & Career</li>
+            <li class="footerr__list__item">Investors</li>
+            <li class="footerr__list__item">Sustainable Innovation</li>
+            <li class="footerr__list__item">CA Suppy Chains Act</li>
+          </ul>
+        </div>
+        <div class="col-1-of-2">
+            <div class="footer">
+  
+                <div class="foot-heading">
+                  <h5 class="foot__h3">Subscibe To Newsletters</h5>
+                  <p class="footer__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Possimus, ipsum nesciunt vel reprehenderit
+                    assumenda eligendi!</p>
+                </div>
+          
+                <div class="subscribe-button">
+                  <form action="" method="" class="footer-form">
+                    <input class="footer-email" type="email" name="" id="" placeholder="your e-mail address" required="required">
+                    <input class="footer__submit-button" type="submit" name="submit" value="Subscibe">
+                  </form>
+                </div>
+  
+            </div>
+        </div>
+        <span class="dash"></span>        
       </div>
-
-      <div class="subscribe-button">
-        <form action="" method="" class="footer-form">
-          <input class="footer-email" type="email" name="" id="" placeholder="your e-mail address" required="required">
-          <input class="footer__submit-button" type="submit" name="submit" value="Subscibe">
-        </form>
-      </div>
-
-      <div class="footer-menu">
-        <ul class="footer__ul">
-          <li class="footer__li"><a href="" class="footer__a">About Us</a></li>
-          <li class="footer__li"><a href="" class="footer__a">FAQ</a></li>
-          <li class="footer__li"><a href="" class="footer__a">CONTACTS US</a></li>
-          <li class="footer__li"><a href="" class="footer__a">PRIVACY POLICY</a></li>
-          <li class="footer__li"><a href="" class="footer__a">Terms of service</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-copyright">
-        <p class="footer-copyright__p">Copyright 2018 Fashion. All Right Reserved. </p>
+      <div class="row">
+        <div class="footer-menu">
+          <ul class="footer__ul">
+            <li class="footer__li"><a href="" class="footer__a">About Us</a></li>
+            <li class="footer__li"><a href="" class="footer__a">FAQ</a></li>
+            <li class="footer__li"><a href="" class="footer__a">CONTACTS US</a></li>
+            <li class="footer__li"><a href="" class="footer__a">PRIVACY POLICY</a></li>
+            <li class="footer__li"><a href="" class="footer__a">Terms of service</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-copyright">
+          <p class="footer-copyright__p">Copyright 2018 Fashion. All Right Reserved. </p>
+        </div>
       </div>
     </div>
-  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>

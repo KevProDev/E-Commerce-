@@ -16,6 +16,10 @@
 
 })();
 
+
+
+
+
 // add items to the cart
 
 (function(){
@@ -71,7 +75,7 @@
   });
 
 
-  // Another fuction ///
+  // Show total cost of cart items ///
 
   function showTotal(){
     console.log("funcition is working");
@@ -97,24 +101,170 @@
   }
 })();
 
-// function userCreator(name, score){
-//   let newUser = Object.create(userFunctionStore);
-//   newUser.name = name;
-//   newUser.score = score;
-//   return newUser;
-// };
 
-// let userFunctionStore = {
-//   increment: function(){
-//     this.score++
-//   },
-//   login: function(){console.log("Youre Logged In...");}
-// };
+// (function(){
 
-// let user1 = userCreator("Kevin", 7);
-// let user2 = userCreator("Lichine", 5);
-// user1.increment();
-// console.log(user1);
+//   var checkbox = document.querySelectorAll(".panel__checkbox[name=checkbox]");
+//   // console.log(checkbox);
 
+//   checkbox.forEach(function(eachcheckbox){
+
+//     eachcheckbox.addEventListener( 'change', function() {
+
+//       //check the filter name 
+//       const check_value = event.target.dataset.filter;
+//       console.log("this is filter value" + check_value);
+
+//       //items on the product section
+//       const items = document.querySelectorAll(".item-data")
+
+
+//       if(eachcheckbox.checked) {
+      
+//         items.forEach(function(item){
+
+//             if (item.classList.contains(check_value)){
+//               item.style.display = "inline-block";
+//             }
+//             else{
+//               item.style.display = "none";
+//             }
+//         });
+       
+
+//       }
+//       else{
+//         items.forEach(function(item){
+        
+//             item.style.display = "inline-block";
+          
+//         });
+//       }
+
+//     });
+    
+
+
+//   });
+// })();
+
+const checkthis = document.querySelectorAll(".price-under");
+
+
+
+checkthis.forEach(function(price){
+ 
+  price.addEventListener('change', function(){
+    
+    // the price amount that was checked
+    const checkispress = event.target.dataset.filter;
+    console.log(checkispress);
+    
+
+    const productItem = document.querySelectorAll(".item-data");
+    console.log(productItem);
+    
+
+    const productPrice = document.querySelectorAll(".item-price__p");
+
+    if(price.checked){
+
+      productItem.forEach(function(item){
+
+       
+        const itemMoney = item.childNodes[1].childNodes[1].childNodes[5].childNodes[3].childNodes[1].innerText;
+        // console.log(itemMoney);
+
+        if( Number(checkispress) < Number(itemMoney) ){
+          item.style.display = "none";
+          
+        }
+    
+        const itemDisplaying = item.parentElement.parentElement.parentElement.parentElement.parentElement;
+        
+      })
+      
+    }
+    else {
+      console.log("un check");
+      productItem.forEach(function(item){
+
+        item.style.display = "inline-block";
+       
+        // const itemMoney = item.childNodes[1].childNodes[1].childNodes[5].childNodes[3].childNodes[1].innerText;
+        // // console.log(itemMoney);
+
+        // if( Number(checkispress) < Number(itemMoney) ){
+        //   item.style.display = "none";
+          
+        // }
+    
+        // const itemDisplaying = item.parentElement.parentElement.parentElement.parentElement.parentElement;
+        
+      })
+      
+    }
+  })
+});
+
+
+
+
+
+
+
+
+
+
+
+// Filter product item based off color
+(function(){
+
+  var checkbox = document.querySelectorAll(".color-checkbox[name=checkbox]");
+  // console.log(checkbox);
+
+  checkbox.forEach(function(eachcheckbox){
+
+    eachcheckbox.addEventListener( 'change', function() {
+
+      //check the filter name 
+      const check_value = event.target.dataset.filter;
+      // console.log("this is filter value " + check_value);
+
+      //items on the product section
+      const items = document.querySelectorAll(".item-data")
+
+
+      if(eachcheckbox.checked) {
+      
+        items.forEach(function(item){
+          if (check_value == "all"){
+            item.style.display = "inline-block";
+          }
+          else {
+            if (item.classList.contains(check_value)){
+              item.style.display = "inline-block";
+            }
+            else{
+              item.style.display = "none";
+            }
+          }
+        });
+
+      }
+      else{
+        items.forEach(function(item){
+        
+            item.style.display = "inline-block";
+          
+        });
+      }
+
+    });
+    
+
+
+  });
+})();
 
 
