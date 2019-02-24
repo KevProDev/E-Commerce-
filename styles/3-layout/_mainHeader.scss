@@ -10,12 +10,11 @@
 }
 
 .proto_col-2-of-3{
-  width: 50%;
+  width: 48%;
 }
 
 .img-set_3{
-  float: left;
-  width: 10%;
+  width: 26%;
 }
 
 .img-set_2{
@@ -27,9 +26,15 @@
   width: 100%;
   position: fixed;
   z-index: 99;
-  height: 50px;
+  // height: 50px;
   // background-color: blueviolet;
   background-color: #fff;
+}
+
+.master-header{
+  position: relative;
+  z-index: 20;
+  height: 157px;
 }
 
 .header{
@@ -63,6 +68,10 @@
 
 .brandname{
   text-align: center;
+    width: 286px;
+    margin: 0 auto;
+    line-height: 50px;
+    letter-spacing: 3px;
 }
 
   .company-logo{
@@ -76,17 +85,31 @@
     // color: #fff;
   }
 
+.above-header-logo{
+  position: relative;
+  height: 30px;
+}
+
+.world-orgin{
+  display: inline-block;
+    padding: 0px 30px;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
 .login-info__box{
-  position: absolute;
-  right: 15px;
-  top: 3px;
+  // position: absolute;
+  // right: 15px;
+  // top: 3px;
 }
 
   .login-text{
     display: inline-block;
-    vertical-align: middle;
     background-color: transparent;
     border: none;
+   
   }
 
 .header__cart{
@@ -96,8 +119,10 @@
   // align-items: center;
   display: inline-block;
   padding: 0px 30px;
-  vertical-align: middle;
   line-height: 1;
+  position: absolute;
+  top: 10%;
+  right: 0;
 } 
   .header__inner__cart{
     overflow: hidden;
@@ -190,6 +215,12 @@
   padding-right: 7.5rem;
 }
 
+.header__ul{
+  border-top: 1px solid #e5e5e5;
+  padding: 15px 0;
+  position: relative;
+}
+
 
 .header__li:first-child{
   // margin-left: 9%;
@@ -231,16 +262,26 @@
 .header__subnav {
   background: #fff;
   position: absolute;
-  // top: 97px;
-  width: 70%;
-  // left: 290px;
-  display: none;
+  width: 80%;
   text-align: initial;
   padding: 3rem;
-  z-index: 22;
-  top: 50px;
   left: 50%;
   transform: translateX(-50%);
+  background-color: antiquewhite;
+  display: none;
+}
+
+.header__subnav-container{
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+
+.sub-cato{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
 }
 
 .col-list{
@@ -403,7 +444,7 @@
   }
 
   .brandname{
-    line-height: 5rem;
+    // line-height: 5rem;
   }
 
   .login-info__box{

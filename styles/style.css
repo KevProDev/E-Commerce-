@@ -23,6 +23,10 @@ Version: 2.0
   padding: 0 60px;
   overflow: hidden; }
 
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto; }
+
 .row {
   max-width: 182rem;
   margin: 0 auto; }
@@ -338,11 +342,10 @@ img {
   width: 25%; }
 
 .proto_col-2-of-3 {
-  width: 50%; }
+  width: 48%; }
 
 .img-set_3 {
-  float: left;
-  width: 10%; }
+  width: 26%; }
 
 .img-set_2 {
   float: left;
@@ -352,8 +355,12 @@ img {
   width: 100%;
   position: fixed;
   z-index: 99;
-  height: 50px;
   background-color: #fff; }
+
+.master-header {
+  position: relative;
+  z-index: 20;
+  height: 157px; }
 
 .header {
   position: relative;
@@ -366,7 +373,11 @@ img {
   text-align: center; }
 
 .brandname {
-  text-align: center; }
+  text-align: center;
+  width: 286px;
+  margin: 0 auto;
+  line-height: 50px;
+  letter-spacing: 3px; }
 
 .company-logo {
   font-size: 3rem;
@@ -375,22 +386,30 @@ img {
   text-align: center;
   padding-bottom: 1rem; }
 
-.login-info__box {
+.above-header-logo {
+  position: relative;
+  height: 30px; }
+
+.world-orgin {
+  display: inline-block;
+  padding: 0px 30px;
+  line-height: 1;
   position: absolute;
-  right: 15px;
-  top: 3px; }
+  top: 50%;
+  left: 0; }
 
 .login-text {
   display: inline-block;
-  vertical-align: middle;
   background-color: transparent;
   border: none; }
 
 .header__cart {
   display: inline-block;
   padding: 0px 30px;
-  vertical-align: middle;
-  line-height: 1; }
+  line-height: 1;
+  position: absolute;
+  top: 10%;
+  right: 0; }
 
 .header__inner__cart {
   overflow: hidden;
@@ -435,6 +454,11 @@ img {
   text-align: right;
   padding-right: 7.5rem; }
 
+.header__ul {
+  border-top: 1px solid #e5e5e5;
+  padding: 15px 0;
+  position: relative; }
+
 .header__li {
   display: inline-block;
   padding: 0 1.5rem; }
@@ -458,14 +482,24 @@ img {
 .header__subnav {
   background: #fff;
   position: absolute;
-  width: 70%;
-  display: none;
+  width: 80%;
   text-align: initial;
   padding: 3rem;
-  z-index: 22;
-  top: 50px;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  background-color: antiquewhite;
+  display: none; }
+
+.header__subnav-container {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center; }
+
+.sub-cato {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left; }
 
 .col-list {
   line-height: initial;
@@ -574,8 +608,6 @@ img {
       font-size: 22px; }
   .login-text {
     display: none; }
-  .brandname {
-    line-height: 5rem; }
   .login-info__box {
     right: -11px;
     top: 6px; }
@@ -624,10 +656,9 @@ img {
     width: 30px; } }
 
 .slider {
-  width: 100%;
-  position: relative;
-  height: 100vh;
-  overflow: hidden; }
+  background: url("/img/hero-background.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 @media (max-width: 1740px) {
   .slider {
@@ -637,13 +668,9 @@ img {
   max-width: 100%; }
 
 .slider__text {
-  position: absolute;
-  top: 20%;
-  bottom: 0;
-  left: 11%;
-  color: white;
-  font-family: Tw Cen MT;
-  width: 550px; }
+  text-align: center;
+  width: 40%;
+  margin: 0 auto; }
 
 @media (max-width: 1208px) {
   .slider__text {
@@ -714,7 +741,7 @@ img {
 .btn-link {
   font-size: 2.2rem;
   color: #fff;
-  background-color: #121212;
+  background-color: #2f2f2f;
   padding: 10px 30px;
   border-radius: 2px;
   margin-top: 2.5rem;
