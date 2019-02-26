@@ -46,9 +46,9 @@
                   </div>
                 </div>
               </div>
-              <button class="login-text">
+              <div class="login-text">
                   <p class="text__fine">Join / Login In To Johnson Co</p>  
-              </button>
+              </div>
             </div>
           </div>
         <div class="brandname">
@@ -236,13 +236,13 @@
 
 
   <div class="slider clearfix">
-    <!-- <img src="img/img62.jpg" alt="" class="slider__img"> -->
-    <div class="slider__text clearfix">
+    <div class="img-background"></div>
+    <!-- <div class="slider__text clearfix">
       <h2 class="slider__title">Latest Fashion <br> Collection</h2>
       <p class="slider__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quasi voluptate voluptas
         magnam, neque sed.</p>
       <a class="btn-link clearfix" href="">Shop Now</a>
-    </div>
+    </div> -->
   </div>
 
   
@@ -277,23 +277,27 @@
             <div class="panel__details panel__details__1">
               <ul>
                 <li class="panel__item">
-                  <input type="checkbox" class="panel__checkbox price-under" name="checkbox" data-filter="100">
+                  <input type="radio" class="panel__checkbox price-under" name="checkbox" data-filter="1000">
+                  <label for="" class="panel__label">ALL</label>
+                </li>
+                <li class="panel__item">
+                  <input type="radio" class="panel__checkbox price-under" name="checkbox" data-filter="100">
                   <label for="" class="panel__label">Under $100</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" class="panel__checkbox price-under" name="checkbox" data-filter="80">
+                  <input type="radio" class="panel__checkbox price-under" name="checkbox" data-filter="80">
                   <label for="" class="panel__label">Under $80</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" class="panel__checkbox price-under" name="checkbox" data-filter="50">
+                  <input type="radio" class="panel__checkbox price-under" name="checkbox" data-filter="50">
                   <label for="" class="panel__label">Under $50</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" class="panel__checkbox price-under" name="checkbox" data-filter="40">
+                  <input type="radio" class="panel__checkbox price-under" name="checkbox" data-filter="40">
                   <label for="" class="panel__label">Under $40</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" class="panel__checkbox price-under" name="checkbox" data-filter="30">
+                  <input type="radio" class="panel__checkbox price-under" name="checkbox" data-filter="30">
                   <label for="" class="panel__label">Under $30</label>
                 </li>
               </ul>
@@ -312,39 +316,39 @@
             <div class="panel__details panel__details__2nd ">
              
               <li class="panel__item">
-                <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="all">
+                <input type="radio" name="checkbox" class="panel__checkbox2 color-checkbox" data-filter="all">
                 <label for="" class="panel__label">All</label>
               </li>
               <li class="panel__item">
-                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="navy">
+                  <input type="radio" name="checkbox" class="panel__checkbox2 color-checkbox" data-filter="navy">
                   <label for="" class="panel__label">Navy</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="red">
+                  <input type="radio" name="checkbox" class="panel__checkbox2 color-checkbox" data-filter="red">
                   <label for="" class="panel__label">Red</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="green">
+                  <input type="radio" name="checkbox" class="panel__checkbox2 color-checkbox" data-filter="green">
                   <label for="" class="panel__label">Green</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="brown">
+                  <input type="radio" name="checkbox" class="panel__checkbox2 color-checkbox" data-filter="brown">
                   <label for="" class="panel__label">Brown</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="pink">
+                  <input type="radio" name="checkbox" class="panel__checkbox2 color-checkbox" data-filter="pink">
                   <label for="" class="panel__label">Pink</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="tan">
+                  <input type="radio" name="checkbox" class="panel__checkbox2 color-checkbox" data-filter="tan">
                   <label for="" class="panel__label">Tan</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="black">
+                  <input type="radio" name="checkbox" class="panel__checkbox2 color-checkbox" data-filter="black">
                   <label for="" class="panel__label">Black</label>
                 </li>
                 <li class="panel__item">
-                  <input type="checkbox" name="checkbox" class="panel__checkbox color-checkbox" data-filter="white">
+                  <input type="radio" name="checkbox" class="panel__checkbox2 color-checkbox" data-filter="white">
                   <label for="" class="panel__label">White</label>
                 </li>
               
@@ -1139,39 +1143,39 @@
     })
 
 
-    $(document).ready(function () {
+    // $(document).ready(function () {
 
-      if (window.matchMedia('(max-width: 800px)').matches) {
-        $(function () {
-        // hide all text except the first
-        $('.info__ul .info__li:gt(0)').hide();
+    //   if (window.matchMedia('(max-width: 800px)').matches) {
+    //     $(function () {
+    //     // hide all text except the first
+    //     $('.info__ul .info__li:gt(0)').hide();
 
-        setInterval(function () {
-          // get the first text 
-          var current = $('.info__ul .info__li:visible');
+    //     setInterval(function () {
+    //       // get the first text 
+    //       var current = $('.info__ul .info__li:visible');
 
-          // get the immediate next text otherwise find the first one
-          var next = current.next().length ? current.next() : $('.info__li:eq(0)');
+    //       // get the immediate next text otherwise find the first one
+    //       var next = current.next().length ? current.next() : $('.info__li:eq(0)');
 
-          //hide the current text
-          current.fadeOut(4000);
+    //       //hide the current text
+    //       current.fadeOut(4000);
 
-          //show next text
-          next.fadeIn(3000);
-        }, 5000);
+    //       //show next text
+    //       next.fadeIn(3000);
+    //     }, 5000);
 
-      });
-      } else {
-                $(function () {
-        // hide all text except the first
-        $('.info__ul .info__li:gt(0)').show();
+    //   });
+    //   } else {
+    //             $(function () {
+    //     // hide all text except the first
+    //     $('.info__ul .info__li:gt(0)').show();
       
-      });
-      }
+    //   });
+    //   }
 
 
 
-    });
+    // });
 
 
     $(document).ready(function () {

@@ -110,19 +110,21 @@
     const checkthis = document.querySelectorAll(".price-under");
 
     checkthis.forEach(function(price){
+
+      console.log(price);
     
       price.addEventListener('change', function(){
         
         // the price amount that was checked
         const checkispress = event.target.dataset.filter;
         console.log(checkispress);
+
         
+
 
         const productItem = document.querySelectorAll(".item-data");
         console.log(productItem);
         
-
-        const productPrice = document.querySelectorAll(".item-price__p");
 
         if(price.checked){
 
@@ -131,13 +133,15 @@
           
             const itemMoney = item.childNodes[1].childNodes[1].childNodes[5].childNodes[3].childNodes[1].innerText;
             // console.log(itemMoney);
+            item.style.display = "inline-block";
 
             if( Number(checkispress) < Number(itemMoney) ){
               item.style.display = "none";
               
+            } else{
+              item.style.display = "inline-block";
             }
         
-            const itemDisplaying = item.parentElement.parentElement.parentElement.parentElement.parentElement;
             
           })
           
