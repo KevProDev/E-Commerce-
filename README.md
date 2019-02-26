@@ -3,7 +3,7 @@ this is the frontend of a basic e-commerce website
 
 E Commerce Site
 
-Technogies: HTML CSS VANILLA JAVASCRIPT
+Technology: HTML CSS VANILLA JAVASCRIPT
 
 Challenge: 
 To build a prototype of a women’s e-commerce site. Build it with no frontend framework. Browser support of 95% or higher. The page needs to be responsive. Also it needed to display the cart items added. Basic UI filter behavior is also needed. 
